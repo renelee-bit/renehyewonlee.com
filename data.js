@@ -179,3 +179,10 @@ const BIO_KO = [
  "지금도 기어이에서 새로운 작품을 기획·제작하며, AI를 비롯한 새로운 기술을 창작의 재료로 실험하고 있다. 자신의 작업과 함께 창작자들이 새로운 도구를 자기 언어로 만들도록 돕는 워크숍과 해커톤을 설계하고, 해외 시장으로 향하는 창작자를 멘토링한다. 한국예술종합학교에 출강하며 단국대학교 초빙교수로 재직 중이다."
 ];
 
+
+/* ---------- PRESS & INTERVIEWS (원문 제목 그대로, 최신순) ---------- */
+const PRESS = [
+ {d:"2025-10-10",t:"이야기 속으로 접속, 이혜원 기어이 대표 [인터뷰]",o_en:"DEN Magazine",o_ko:"덴 매거진",q_en:"On giving the audience a role and making them the protagonist",q_ko:"관객에게 역할을 부여해 이야기의 주인공으로",url:"https://www.theden.co.kr/news/articleView.html?idxno=4035"},
+ {d:"2023-08-24",t:"가상과 현실의 리얼리티를 연결하다: ‘기어이’ 인터뷰",o_en:"iimedia Newsletter No. 32",o_ko:"아이아이미디어 뉴스레터 32호",q_en:"On content grounded in storytelling rather than technology",q_ko:"기술보다 스토리텔링이 기반이 되는 콘텐츠",url:"https://maily.so/iimedia/posts/3jrkdv76o51"},
+ {d:"2023-02-03",t:"[아티(ATI) 기업탐방] 기어이",o_en:"ArtMore, Korea Arts Management Service",o_ko:"아트모아, 예술경영지원센터",q_en:"On the studio's name: a story that technology fits",q_ko:"기술이 어울리는 이야기",url:"https://artmore.kr/sub/comJob/com_visit_view.do?bbs_detail_idx=555"}
+];

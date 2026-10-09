@@ -89,6 +89,7 @@ section{padding-top:72px}
 .row .y{color:var(--muted);font-size:14px}
 .row .t{font-weight:500;min-width:0}
 .row .t i{font-style:italic}
+.row .t a{border-bottom:1px solid currentColor}
 .row .m{display:block;color:var(--muted);font-weight:400;font-size:14px;margin-top:2px}
 .row .r{font-size:14px;min-width:0}
 .row .c{font-size:12px;color:var(--muted);text-align:right;letter-spacing:.04em}
@@ -204,6 +205,7 @@ footer{margin-top:80px;padding-top:12px;border-top:1px solid var(--rule);font-si
         <div lang="ko"><div class="lab">한국어</div><div id="bio-ko"></div></div>
       </div>
       <div class="sub"><h3 data-i="h_awards"></h3><ul class="list" id="awards-list"></ul></div>
+      <div class="sub"><h3 data-i="h_press"></h3><ul class="list" id="press-list"></ul></div>
       <div class="sub"><h3 data-i="h_exp"></h3><ul class="list" id="exp-list"></ul></div>
       <div class="sub"><h3 data-i="h_edu"></h3><ul class="list" id="edu-list"></ul></div>
     </section>
@@ -233,7 +235,7 @@ const S = {
  en:{hero:"Turning technology into a <em>creative language</em>.",
   intro:"Rene Hyewon Lee is a producer and director of immersive storytelling, working on the boundary between art and technology and between Korea and the world. Founder of Giioii.",
   h_now:"Recent",h_works:"Works",h_talks:"Talks",h_writing:"Publications",h_teaching:"Workshops & Mentoring",h_juries:"Juries, Advisory & Research",h_about:"About",h_contact:"Contact",
-  h_awards:"Awards & Recognition",h_exp:"Experience",h_edu:"Education",
+  h_awards:"Awards & Recognition",h_press:"Press & Interviews",h_exp:"Experience",h_edu:"Education",
   contact_short:"For commissions",copy:"Copy email",copied:"Copied",
   all:"All",produce:"Producing",direct:"Directing",curate:"Curating & Programs",ai:"AI",screenx:"ScreenX 2012–19",speaker:"Speaker",moderator:"Moderator",lecture:"Lectures",
   workshop:"Workshops & Labs",mentor:"Mentoring",uni:"University",advisory:"Advisory",jury:"Juries",research:"Research",
@@ -244,7 +246,7 @@ const S = {
  ko:{hero:"기술을 <em>창작의 언어</em>로 바꾸는 경계인",
   intro:"이혜원은 예술과 기술, 한국과 해외 현장의 경계에서 일하는 몰입형 스토리텔링 프로듀서이자 연출가다. 기어이 대표.",
   h_now:"최근",h_works:"작업",h_talks:"발표",h_writing:"기고",h_teaching:"워크숍·멘토링",h_juries:"심사·자문·연구",h_about:"소개",h_contact:"의뢰",
-  h_awards:"수상·선정",h_exp:"경력",h_edu:"학력",
+  h_awards:"수상·선정",h_press:"인터뷰·보도",h_exp:"경력",h_edu:"학력",
   contact_short:"의뢰 문의",copy:"이메일 복사",copied:"복사됨",
   all:"전체",produce:"프로듀싱",direct:"연출",curate:"기획·프로그램",ai:"AI",screenx:"ScreenX 2012–19",speaker:"발표",moderator:"모더레이션",lecture:"강연·특강",
   workshop:"워크숍·랩",mentor:"멘토링",uni:"대학 강의",advisory:"자문",jury:"심사",research:"연구",
@@ -311,6 +313,7 @@ function render(){
   $("juries-list").innerHTML=jv.map(o=>row(o)).join(""); $("juries-count").textContent=jv.length;
   $("orgs").textContent = L==="en"?ORGS_EN:ORGS_KO;
   $("awards-list").innerHTML = D.filter(o=>o.type==="award").map(o=>row(o)).join("");
+  $("press-list").innerHTML = PRESS.map(p=>`<li class="row"><span class="y">${esc(p.d.slice(0,4))}</span><span class="t"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)} ↗</a><span class="m">${esc(L==="en"?p.q_en:"“"+p.q_ko+"”")}</span></span><span class="r">${esc(L==="en"?p.o_en:p.o_ko)}</span><span class="c">${L==="en"?"KO":""}</span></li>`).join("");
   $("bio-en").innerHTML = BIO_EN.map(p=>`<p>${p}</p>`).join("");
   $("bio-ko").innerHTML = BIO_KO.map(p=>`<p>${p}</p>`).join("");
   const simple = arr => arr.map(o=>`<li class="row"><span class="y">${esc(o.y)}</span><span class="t">${esc(tx(o,"t"))}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c"></span></li>`).join("");
