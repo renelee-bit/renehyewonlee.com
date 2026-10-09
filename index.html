@@ -313,7 +313,7 @@ function render(){
   $("juries-list").innerHTML=jv.map(o=>row(o)).join(""); $("juries-count").textContent=jv.length;
   $("orgs").textContent = L==="en"?ORGS_EN:ORGS_KO;
   $("awards-list").innerHTML = D.filter(o=>o.type==="award").map(o=>row(o)).join("");
-  $("press-list").innerHTML = PRESS.map(p=>`<li class="row"><span class="y">${esc(p.d.slice(0,4))}</span><span class="t"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)} ↗</a><span class="m">${esc(L==="en"?p.q_en:"“"+p.q_ko+"”")}</span></span><span class="r">${esc(L==="en"?p.o_en:p.o_ko)}</span><span class="c">${L==="en"?"KO":""}</span></li>`).join("");
+  $("press-list").innerHTML = PRESS.slice().sort((a,b)=>b.d.localeCompare(a.d)).map(p=>`<li class="row"><span class="y">${esc(p.d.slice(0,4))}</span><span class="t"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)} ↗</a><span class="m">${esc(L==="en"?p.q_en:"“"+p.q_ko+"”")}</span></span><span class="r">${esc(L==="en"?p.o_en:p.o_ko)}</span><span class="c">${L==="en"?"KO":""}</span></li>`).join("");
   $("bio-en").innerHTML = BIO_EN.map(p=>`<p>${p}</p>`).join("");
   $("bio-ko").innerHTML = BIO_KO.map(p=>`<p>${p}</p>`).join("");
   const simple = arr => arr.map(o=>`<li class="row"><span class="y">${esc(o.y)}</span><span class="t">${esc(tx(o,"t"))}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c"></span></li>`).join("");
