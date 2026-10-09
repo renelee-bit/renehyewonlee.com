@@ -27,7 +27,7 @@ const D = [
 {type:"work",y:"2020",cat:"produce",t_en:"Two Eyes",t_ko:"두 개의 눈",r_en:"Producer",r_ko:"프로듀서",m_en:"Multidisciplinary performance, Asia Culture Center",m_ko:"융복합공연, 국립아시아문화전당",c:"KR"},
 {type:"work",y:"2020",cat:"produce",t_en:"Sound Map Project in Multiple Spaces",t_ko:"다중 공간에서의 사운드맵 프로젝트",r_en:"Producer",r_ko:"프로듀서",m_en:"Cho Eunhee · Seoul Foundation for Arts and Culture",m_ko:"조은희 · 서울문화재단 지원",c:"KR"},
 {type:"work",y:"2017",cat:"produce",t_en:"Cosmic Moment",t_ko:"코스믹 모먼트",r_en:"Producer",r_ko:"프로듀서",m_en:"ScreenX brand film · KLIK! Animation Festival, Branded Film Competition",m_ko:"ScreenX 브랜드필름 · KLIK! 애니메이션 페스티벌 브랜디드필름 경쟁",c:"NL"},
-{type:"work",y:"2012–19",cat:"produce screenx",t_en:"ScreenX",t_ko:"스크린엑스",r_en:"Founding Member, Global Launch, Head of Team",r_ko:"창립 멤버 · 글로벌 런칭 · 부장",m_en:"World's first 270° multi-projection cinema format (Edison Award) · global launch in 7 countries · 22 ScreenX feature releases, 2.2M admissions",m_ko:"세계 최초 270° 다면상영 포맷(에디슨 어워드) · 7개국 글로벌 진출 · ScreenX 장편 22편 개봉, 누적 220만 관객",c:"KR"},
+{type:"work",y:"2012–19",sel:1,cat:"produce screenx",t_en:"ScreenX",t_ko:"스크린엑스",r_en:"Founding Member, Global Launch, Head of Team",r_ko:"창립 멤버 · 글로벌 런칭 · 부장",m_en:"World's first 270° multi-projection cinema format (Edison Award) · global launch in 7 countries · 22 ScreenX feature releases, 2.2M admissions",m_ko:"세계 최초 270° 다면상영 포맷(에디슨 어워드) · 7개국 글로벌 진출 · ScreenX 장편 22편 개봉, 누적 220만 관객",c:"KR"},
 /* ScreenX era detail — shown only under the ScreenX filter (cat "sx") */
 {type:"work",y:"2016",cat:"sx screenx",t_en:"BIGBANG MADE",t_ko:"빅뱅 메이드",r_en:"Investment & Planning",r_ko:"투자기획",m_en:"First ScreenX music documentary and a box-office hit for the format · CJ CGV Value Gold Award 2016 (team)",m_ko:"ScreenX 최초의 뮤직 다큐멘터리이자 포맷의 흥행 성공작 · CJ CGV 가치실천 금상 2016(팀 수상)",c:"KR"},
 {type:"work",y:"2013",cat:"sx screenx",t_en:"The X",t_ko:"더 엑스",r_en:"Publicity (credited)",r_ko:"홍보 참여(크레딧)",m_en:"Short film made for ScreenX, dir. Kim Jee-woon, starring Kang Dong-won · BIFF 2013 Gala Presentation",m_ko:"김지운 감독, 강동원 주연 ScreenX 단편 · 부산국제영화제 2013 갈라 프레젠테이션",c:"KR"},
@@ -116,10 +116,10 @@ const D = [
 {type:"teaching",y:"2011–12",f:"uni",t_en:"Korea National University of Arts (K-Arts)",t_ko:"한국예술종합학교",r_en:"Lecturer",r_ko:"출강",m_en:"Arts Management",m_ko:"예술경영전공",c:"KR"},
 
 /* ---------- JURIES, ADVISORY & RESEARCH (f = advisory | jury | research) ---------- */
-{type:"jury",f:"advisory",y:"2026–27",t_en:"Content Business Advisory Board",t_ko:"콘텐츠 비즈니스 자문위원",r_en:"Advisor",r_ko:"자문위원",m_en:"Overseas Expansion Center, KOCCA",m_ko:"한국콘텐츠진흥원 콘텐츠 해외진출센터",c:"KR"},
-{type:"jury",f:"jury",y:"2026",t_en:"AI × Art Creation Project Support",t_ko:"AI-예술 창제작 프로젝트 지원",r_en:"Juror",r_ko:"심사위원",m_en:"Korea Arts Management Service",m_ko:"예술경영지원센터",c:"KR"},
-{type:"jury",f:"jury",y:"2026",t_en:"NEXT:ON 2026 — Media Art Content Competition",t_ko:"2026 미디어아트 콘텐츠 공모전 「NEXT:ON 2026」",r_en:"Juror",r_ko:"심사위원",m_en:"Incheon Technopark",m_ko:"인천테크노파크",c:"KR"},
-{type:"jury",f:"jury",y:"2024",t_en:"Unfold X",t_ko:"언폴드엑스",r_en:"Juror",r_ko:"심사평가위원",m_en:"Seoul Foundation for Arts and Culture",m_ko:"서울문화재단",c:"KR"},
+{type:"jury",f:"advisory",sel:1,y:"2026–27",t_en:"Content Business Advisory Board",t_ko:"콘텐츠 비즈니스 자문위원",r_en:"Advisor",r_ko:"자문위원",m_en:"Overseas Expansion Center, KOCCA",m_ko:"한국콘텐츠진흥원 콘텐츠 해외진출센터",c:"KR"},
+{type:"jury",f:"jury",sel:1,y:"2026",t_en:"AI × Art Creation Project Support",t_ko:"AI-예술 창제작 프로젝트 지원",r_en:"Juror",r_ko:"심사위원",m_en:"Korea Arts Management Service",m_ko:"예술경영지원센터",c:"KR"},
+{type:"jury",f:"jury",sel:1,y:"2026",t_en:"NEXT:ON 2026 — Media Art Content Competition",t_ko:"2026 미디어아트 콘텐츠 공모전 「NEXT:ON 2026」",r_en:"Juror",r_ko:"심사위원",m_en:"Incheon Technopark",m_ko:"인천테크노파크",c:"KR"},
+{type:"jury",f:"jury",sel:1,y:"2024",t_en:"Unfold X",t_ko:"언폴드엑스",r_en:"Juror",r_ko:"심사평가위원",m_en:"Seoul Foundation for Arts and Culture",m_ko:"서울문화재단",c:"KR"},
 {type:"jury",f:"advisory",y:"2022",t_en:"Metaverse Expert Committee",t_ko:"메타버스 전문위원",r_en:"Committee Member",r_ko:"전문위원",m_en:"KOCCA",m_ko:"한국콘텐츠진흥원",c:"KR"},
 {type:"jury",f:"advisory",y:"2021–22",t_en:"PAMS — Seoul Performing Arts Market",t_ko:"서울아트마켓 PAMS",r_en:"Connector",r_ko:"커넥터",m_en:"Korea Arts Management Service",m_ko:"예술경영지원센터",c:"KR"},
 {type:"jury",f:"advisory",y:"2021",t_en:"Culture Technology Expert Committee",t_ko:"문화기술 전문위원",r_en:"Committee Member",r_ko:"전문위원",m_en:"Gyeonggi Content Agency",m_ko:"경기콘텐츠진흥원",c:"KR"},
@@ -127,7 +127,7 @@ const D = [
 {type:"jury",f:"research",y:"2020",t_en:"Immersive Content Master Plan for a Tourism Hub City",t_ko:"관광거점도시 실감콘텐츠 사업 기본계획 수립",r_en:"Principal Researcher",r_ko:"책임연구원",m_en:"Gangneung City",m_ko:"강릉시",c:"KR"},
 {type:"jury",f:"research",y:"2020",t_en:"Online Arts Education Trend Report",t_ko:"온라인 문화예술교육 동향리포트",r_en:"Co-researcher",r_ko:"공동연구원",m_en:"KACES",m_ko:"한국문화예술교육진흥원",c:"KR"},
 {type:"jury",f:"research",y:"2018",t_en:"Immersive Content Planning: Korean and International Cases",t_ko:"실감형 문화강국 프로젝트 콘텐츠 기획 국내외 사례연구",r_en:"Researcher",r_ko:"연구",m_en:"KOCCA",m_ko:"한국콘텐츠진흥원",c:"KR"},
-{type:"jury",f:"research",y:"2016–18",t_en:"Multi-projection System and Content Development",t_ko:"다면상영 시스템 및 콘텐츠 개발",r_en:"Principal Investigator",r_ko:"책임연구원",m_en:"National VR flagship project, Ministry of Science, ICT and Future Planning",m_ko:"미래창조과학부 가상현실 5대 선도 프로젝트",c:"KR"},
+{type:"jury",f:"research",sel:1,y:"2016–18",t_en:"Multi-projection System and Content Development",t_ko:"다면상영 시스템 및 콘텐츠 개발",r_en:"Principal Investigator",r_ko:"책임연구원",m_en:"National VR flagship project, Ministry of Science, ICT and Future Planning",m_ko:"미래창조과학부 가상현실 5대 선도 프로젝트",c:"KR"},
 {type:"jury",f:"research",y:"2009",t_en:"Music Industry Trend Analysis 2009",t_ko:"2009 음악산업 동향분석",r_en:"Principal Researcher",r_ko:"책임연구원",m_en:"KOCCA",m_ko:"한국콘텐츠진흥원",c:"KR"},
 
 /* ---------- AWARDS ---------- */
