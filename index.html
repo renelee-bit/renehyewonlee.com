@@ -111,6 +111,7 @@ section{padding-top:72px}
 /* about */
 .bio{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px;padding-top:20px}
 .bio p{margin:0 0 1em;max-width:62ch}
+.bio a{border-bottom:1px solid var(--blue);color:var(--blue)}
 .bio .lab{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
 .sub{margin-top:40px}
 .sub h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:500;margin:0 0 6px}
@@ -313,7 +314,7 @@ function render(){
   $("juries-list").innerHTML=jv.map(o=>row(o)).join(""); $("juries-count").textContent=jv.length;
   $("orgs").textContent = L==="en"?ORGS_EN:ORGS_KO;
   $("awards-list").innerHTML = D.filter(o=>o.type==="award").map(o=>row(o)).join("");
-  $("press-list").innerHTML = PRESS.slice().sort((a,b)=>b.d.localeCompare(a.d)).map(p=>`<li class="row"><span class="y">${esc(p.d.slice(0,4))}</span><span class="t"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)} ↗</a><span class="m">${esc(L==="en"?p.q_en:"“"+p.q_ko+"”")}</span></span><span class="r">${esc(L==="en"?p.o_en:p.o_ko)}</span><span class="c">${L==="en"?"KO":""}</span></li>`).join("");
+  $("press-list").innerHTML = PRESS.slice().sort((a,b)=>b.d.localeCompare(a.d)).map(p=>`<li class="row"><span class="y">${p.d?esc(p.d.slice(0,4)):"▶"}</span><span class="t"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)} ↗</a><span class="m">${esc(L==="en"?p.q_en:"“"+p.q_ko+"”")}</span></span><span class="r">${esc(L==="en"?p.o_en:p.o_ko)}</span><span class="c">${L==="en"?"KO":""}</span></li>`).join("");
   $("bio-en").innerHTML = BIO_EN.map(p=>`<p>${p}</p>`).join("");
   $("bio-ko").innerHTML = BIO_KO.map(p=>`<p>${p}</p>`).join("");
   const simple = arr => arr.map(o=>`<li class="row"><span class="y">${esc(o.y)}</span><span class="t">${esc(tx(o,"t"))}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c"></span></li>`).join("");

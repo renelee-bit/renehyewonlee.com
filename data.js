@@ -167,13 +167,13 @@ const ORGS_KO = "심사·평가·자문 기관: 예술경영지원센터, 한국
 const ORGS_EN = "Also served as juror, evaluator or advisor for: Korea Arts Management Service, Arts Council Korea, KOCCA, Korea Radio Promotion Association, KACES, Gyeonggi Cultural Foundation, Gyeonggi Content Agency, Jeonju Cultural Foundation, Seoul Namsan Gugakdang, Art Center Nabi, PARADISE ART LAB, Korea Software Copyright Committee, Korea Private Museum Association, ACTGROUND, Gangneung City, K-Arts, Sogang University and Kyonggi University.";
 
 const BIO_EN = [
- "Rene Hyewon Lee calls herself a boundary dweller. For twenty years she has worked in the space between art and technology, and between Korea and the international scene, taking each new technology and asking what kind of story it is suited to. Her studio's name, Giioii, comes from that question: a story that technology fits.",
+ "Rene Hyewon Lee calls herself a <a href='https://www.youtube.com/watch?v=EfQcy6pEfag&t=21s' target='_blank' rel='noopener'>boundary dweller</a>. For twenty years she has worked in the space between art and technology, and between Korea and the international scene, taking each new technology and asking what kind of story it is suited to. Her studio's name, Giioii, comes from that question: a story that technology fits.",
  "She believes in the power of story, and she looks for creativity inside technology itself. Her works give the audience a role and make them the protagonist: in <i>Palace Immersive Goong</i>, six visitors walk into a 1902 court banquet that never took place; in <i>Nuville Bucheon</i>, an AI guide sends players across the city on missions; in <i>Anima</i>, participants' drawings become motion through AI and motion capture. <i>Palace Immersive Goong</i> received Best in Show at the SIGGRAPH 2025 Immersive Pavilion.",
  "Works she has produced have been officially selected more than 30 times at international festivals including SXSW, Tribeca, IDFA DocLab and NewImages. Earlier, as a founding member of CJ CGV ScreenX, she led the 270° multi-projection format through its global launch, and at KOCCA she worked in global marketing.",
  "She continues to develop and produce new work at Giioii, testing AI and other emerging tools as creative material. Alongside her own productions, she designs workshops and hackathons where artists make new tools their own, and mentors creators heading to international markets. She teaches at Korea National University of Arts and is a visiting professor at Dankook University."
 ];
 const BIO_KO = [
- "이혜원은 스스로를 ‘경계인’이라 부른다. 지난 20년간 예술과 기술 사이, 한국과 해외 현장 사이에서 일하며, 새로운 기술이 나올 때마다 그 기술에 어울리는 이야기가 무엇인지 물어 왔다. 그가 이끄는 스튜디오 ‘기어이’의 이름도 ‘기술이 어울리는 이야기’에서 왔다.",
+ "이혜원은 스스로를 ‘<a href='https://www.youtube.com/watch?v=EfQcy6pEfag&t=21s' target='_blank' rel='noopener'>경계인</a>’이라 부른다. 지난 20년간 예술과 기술 사이, 한국과 해외 현장 사이에서 일하며, 새로운 기술이 나올 때마다 그 기술에 어울리는 이야기가 무엇인지 물어 왔다. 그가 이끄는 스튜디오 ‘기어이’의 이름도 ‘기술이 어울리는 이야기’에서 왔다.",
  "그는 이야기의 힘을 믿고, 기술 안에서 새로운 창의성을 발견한다. 그의 작업은 관객에게 역할을 주고 이야기의 주인공으로 만든다. 〈이머시브 궁〉에서는 여섯 명의 관객이 1902년 열리지 못한 궁중 연회 안을 걷고, 〈누빌부천〉에서는 AI가 참가자에게 미션을 내리며 도시를 움직이게 하고, 〈애니마〉에서는 참여자의 드로잉이 AI와 모션캡처를 거쳐 움직임이 된다. 〈이머시브 궁〉은 SIGGRAPH 2025 이머시브 파빌리온 Best in Show를 받았다.",
  "그가 프로듀싱한 작품들은 SXSW, 트라이베카, IDFA DocLab, 뉴이미지 등 국제 페스티벌에 30회 이상 공식 초청됐다. 앞서 CJ CGV ScreenX 창립 멤버로 270° 다면상영 포맷의 글로벌 런칭을 이끌었고, 한국콘텐츠진흥원에서 글로벌 마케팅을 맡았다.",
  "지금도 기어이에서 새로운 작품을 기획·제작하며, AI를 비롯한 새로운 기술을 창작의 재료로 실험하고 있다. 자신의 작업과 함께 창작자들이 새로운 도구를 자기 언어로 만들도록 돕는 워크숍과 해커톤을 설계하고, 해외 시장으로 향하는 창작자를 멘토링한다. 한국예술종합학교에 출강하며 단국대학교 초빙교수로 재직 중이다."
@@ -182,6 +182,7 @@ const BIO_KO = [
 
 /* ---------- PRESS & INTERVIEWS (원문 제목 그대로, 최신순) ---------- */
 const PRESS = [
+ {d:"",t:"수많은 경계를 넘어 새로운 재미를 찾아다니는 경계인 | 이머시브 프로듀서 이혜원",o_en:"Art, Ketch-Up (YouTube)",o_ko:"쟝, 케챱 (유튜브)",q_en:"Video interview: the boundary dweller",q_ko:"영상 인터뷰",url:"https://www.youtube.com/watch?v=EfQcy6pEfag&t=21s"},
  {d:"2024-11",t:"Artist Talk: 기어이 스튜디오 — PARADISE ART LAB Festival 2024 아카이브북",o_en:"Paradise Cultural Foundation (PDF, pp. 39–42)",o_ko:"파라다이스문화재단 (PDF 39–42쪽)",q_en:"On why audiences forget the technology and remember only the story",q_ko:"관람객은 새로운 기술이 나오면 낡은 기술은 잊고 이야기만 기억합니다",url:"https://pcf.or.kr/images/pc/sub/artLap/2024_PAL_archivebook.pdf#page=39"},
  {d:"2025-10-10",t:"이야기 속으로 접속, 이혜원 기어이 대표 [인터뷰]",o_en:"DEN Magazine",o_ko:"덴 매거진",q_en:"On giving the audience a role and making them the protagonist",q_ko:"관객에게 역할을 부여해 이야기의 주인공으로",url:"https://www.theden.co.kr/news/articleView.html?idxno=4035"},
  {d:"2023-08-24",t:"가상과 현실의 리얼리티를 연결하다: ‘기어이’ 인터뷰",o_en:"iimedia Newsletter No. 32",o_ko:"아이아이미디어 뉴스레터 32호",q_en:"On content grounded in storytelling rather than technology",q_ko:"기술보다 스토리텔링이 기반이 되는 콘텐츠",url:"https://maily.so/iimedia/posts/3jrkdv76o51"},
