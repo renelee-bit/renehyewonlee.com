@@ -268,7 +268,7 @@ const ttl = o => (o.type==="work") ? (L==="ko" ? "〈"+esc(tx(o,"t"))+"〉" : "<
 
 function row(o, opts={}){
   const m = tx(o,"m");
-  return `<li class="row"><span class="y">${esc(yr(o))}</span><span class="t">${ttl(o)}${m?`<span class="m">${esc(m)}</span>`:""}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c">${esc(o.c||"")}</span></li>`;
+  return `<li class="row"><span class="y">${esc(yr(o))}</span><span class="t">${o.url?`<a href="${esc(o.url)}" target="_blank" rel="noopener">${ttl(o)} ↗</a>`:ttl(o)}${m?`<span class="m">${esc(m)}</span>`:""}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c">${esc(o.c||"")}</span></li>`;
 }
 function filters(el, keys, cur, onPick){
   el.innerHTML = keys.map(k => `<button type="button" id="f-${el.id}-${k}" aria-pressed="${k===cur}" data-k="${k}">${S[L][k]}</button>`).join("");
