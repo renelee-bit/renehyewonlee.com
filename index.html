@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rene Hyewon Lee 이혜원 — Immersive Storytelling, Art × Technology</title>
+<meta name="description" content="Rene Hyewon Lee (이혜원) is a Seoul-based producer and director of immersive storytelling working between art and technology. Founder of Giioii. SIGGRAPH 2025 Immersive Pavilion Best in Show.">
+<link rel="canonical" href="https://renehyewonlee.com/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rene Hyewon Lee 이혜원">
+<meta property="og:description" content="Turning technology into a creative language. Producer and director of immersive storytelling. Founder of Giioii.">
+<meta property="og:url" content="https://renehyewonlee.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230019ff'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='14' fill='white' text-anchor='middle'%3ERHL%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Rene Hyewon Lee","alternateName":["이혜원","Hyewon Lee"],"url":"https://renehyewonlee.com/","email":"rene.lee@giioii.com","jobTitle":"Producer and Director of Immersive Storytelling","worksFor":{"@type":"Organization","name":"Giioii Inc.","alternateName":"기어이","url":"https://giioii.com"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Korea National University of Arts"},{"@type":"CollegeOrUniversity","name":"Hankuk University of Foreign Studies"}],"award":"SIGGRAPH 2025 Immersive Pavilion Best in Show (Palace Immersive Goong)","sameAs":["https://www.instagram.com/cultureplanner/"],"knowsAbout":["Immersive storytelling","XR","Location-based entertainment","Art and technology","AI and creativity"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,500;62..125,700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* Layout: Swiss two-column — fixed index column (name + nav) left, ruled list content right; one pure blue as the only accent. */
+:root{
+  --bg:#ffffff;
+  --fg:#0b0b0f;
+  --muted:#6b6d78;
+  --rule:#e3e4ea;
+  --blue:#0019ff;
+  --blue-ink:#ffffff;
+  --font-display:"Archivo","Noto Sans KR","Helvetica Neue",Arial,sans-serif;
+  --font-body:"Archivo","Noto Sans KR","Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(16px,3vw,40px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a0b12;--fg:#f2f2f5;--muted:#9a9cab;--rule:#23253a;--blue:#4d63ff;--blue-ink:#ffffff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a0b12;--fg:#f2f2f5;--muted:#9a9cab;--rule:#23253a;--blue:#4d63ff;--blue-ink:#ffffff;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:15px;line-height:1.5;
+  font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+body:lang(ko){word-break:keep-all}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.wrap{display:grid;grid-template-columns:minmax(220px,1fr) 3fr;gap:0 var(--gutter);padding-inline:var(--gutter);padding-block:var(--gutter) 80px;max-width:1440px;margin:0 auto}
+
+/* left index column */
+.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--gutter));align-self:start;display:flex;flex-direction:column;gap:28px;height:max-content}
+.name{font-family:var(--font-display);font-weight:700;font-stretch:88%;font-size:22px;line-height:1.1;letter-spacing:-.01em}
+.name span{display:block;color:var(--muted);font-weight:400;font-stretch:100%;font-size:15px;margin-top:4px;letter-spacing:0}
+nav ol{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+nav a{display:grid;grid-template-columns:28px 1fr;font-size:15px;padding:1px 0}
+nav a .n{color:var(--muted);font-size:12px;padding-top:3px}
+nav a .ko{color:var(--muted);margin-left:6px}
+nav a:hover,nav a.on{color:var(--blue)}
+nav a:hover .n,nav a.on .n,nav a:hover .ko,nav a.on .ko{color:var(--blue)}
+.lang{display:flex;gap:0;border:1px solid var(--fg);width:max-content}
+.lang button{all:unset;cursor:pointer;padding:4px 12px;font-size:13px;font-weight:500}
+.lang button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.side .mail{font-size:14px;color:var(--muted)}
+.side .mail b{display:block;color:var(--fg);font-weight:500}
+
+/* content */
+main{min-width:0}
+.hero{padding-bottom:56px;border-bottom:1px solid var(--fg)}
+.hero h1{font-family:var(--font-display);font-weight:500;font-stretch:80%;font-size:clamp(34px,5.6vw,80px);line-height:.98;letter-spacing:-.025em;margin:0;max-width:16ch;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero p{max-width:60ch;margin:28px 0 0;font-size:17px;line-height:1.55}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:28px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.facts b{color:var(--fg);font-weight:500}
+
+section{padding-top:72px}
+.sh{display:grid;grid-template-columns:1fr auto;align-items:end;gap:12px;border-bottom:1px solid var(--fg);padding-bottom:10px;margin-bottom:0}
+.sh h2{margin:0;font-family:var(--font-display);font-weight:700;font-stretch:88%;font-size:clamp(22px,2.4vw,30px);letter-spacing:-.01em}
+.sh h2 small{font-weight:400;color:var(--muted);font-stretch:100%;font-size:.6em;margin-left:8px;letter-spacing:0}
+.count{font-size:13px;color:var(--muted)}
+
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px}
+.filters button{all:unset;cursor:pointer;font-size:13px;padding:3px 10px;border:1px solid var(--rule);border-radius:999px}
+.filters button:hover{border-color:var(--blue);color:var(--blue)}
+.filters button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:var(--blue-ink)}
+
+/* ruled list rows */
+.list{list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:72px minmax(0,1fr) minmax(0,13em) 40px;gap:0 20px;padding:11px 0;border-bottom:1px solid var(--rule);align-items:baseline;transition:background .12s,color .12s}
+.row .y{color:var(--muted);font-size:14px}
+.row .t{font-weight:500;min-width:0}
+.row .t i{font-style:italic}
+.row .m{display:block;color:var(--muted);font-weight:400;font-size:14px;margin-top:2px}
+.row .r{font-size:14px;min-width:0}
+.row .c{font-size:12px;color:var(--muted);text-align:right;letter-spacing:.04em}
+.row:hover{background:var(--blue);color:var(--blue-ink)}
+.row:hover .y,.row:hover .m,.row:hover .c{color:var(--blue-ink);opacity:.85}
+.list.sel .row{padding:16px 0}
+.list.sel .row .t{font-size:18px;font-family:var(--font-display);font-stretch:92%}
+.more{all:unset;cursor:pointer;margin-top:14px;font-size:14px;color:var(--blue);display:inline-block}
+.more:hover{text-decoration:underline}
+
+/* now */
+.now{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-bottom:1px solid var(--rule)}
+.now div{padding:16px 20px 18px 0;border-right:1px solid var(--rule);margin-right:20px}
+.now div:last-child{border-right:0}
+.now .d{font-size:13px;color:var(--blue);font-weight:500}
+.now .w{font-weight:500;margin-top:6px}
+.now .p{color:var(--muted);font-size:14px}
+
+/* about */
+.bio{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px;padding-top:20px}
+.bio p{margin:0 0 1em;max-width:62ch}
+.bio .lab{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px}
+.sub{margin-top:40px}
+.sub h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:500;margin:0 0 6px}
+.orgs{color:var(--muted);font-size:14px;max-width:80ch;margin:12px 0 0}
+
+/* contact */
+.offer{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border-bottom:1px solid var(--rule)}
+.offer div{padding:18px 20px 20px 0}
+.offer b{display:block;font-weight:500}
+.offer span{color:var(--muted);font-size:14px}
+.big{font-family:var(--font-display);font-stretch:80%;font-weight:500;font-size:clamp(26px,4vw,52px);letter-spacing:-.02em;margin-top:36px;word-break:break-all;user-select:all}
+.copy{all:unset;cursor:pointer;font-size:13px;border:1px solid var(--fg);padding:4px 12px;margin-top:12px;display:inline-block}
+.copy:hover{background:var(--blue);border-color:var(--blue);color:var(--blue-ink)}
+.links{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px;font-size:14px}
+.links a{border-bottom:1px solid currentColor}
+.links a:hover{color:var(--blue)}
+footer{margin-top:80px;padding-top:12px;border-top:1px solid var(--rule);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr}
+  .side{position:static;gap:18px;padding-bottom:32px}
+  nav ol{grid-template-columns:repeat(2,1fr);gap:4px 12px}
+  .bio{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .row{grid-template-columns:52px minmax(0,1fr);gap:2px 12px}
+  .row .r{grid-column:2;color:var(--muted)}
+  .row .c{display:none}
+  .now div{border-right:0;margin-right:0;border-bottom:1px solid var(--rule)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside class="side">
+    <a href="#index" class="name">Rene Hyewon Lee<span>이혜원</span></a>
+    <nav aria-label="Sections"><ol id="nav"></ol></nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" id="lang-en" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" id="lang-ko" data-l="ko" aria-pressed="false">KR</button>
+    </div>
+    <div class="mail"><b data-i="contact_short"></b>rene.lee@giioii.com</div>
+  </aside>
+
+  <main>
+    <header class="hero" id="index">
+      <h1 data-i="hero"></h1>
+      <p data-i="intro"></p>
+      <div class="facts" id="facts"></div>
+    </header>
+
+    <section id="now">
+      <div class="sh"><h2 data-i="h_now"></h2></div>
+      <div class="now" id="now-list"></div>
+    </section>
+
+    <section id="works">
+      <div class="sh"><h2 data-i="h_works"></h2><span class="count" id="works-count"></span></div>
+      <div class="filters" id="works-filters" role="group" aria-label="Role"></div>
+      <ul class="list" id="works-list"></ul>
+    </section>
+
+    <section id="talks">
+      <div class="sh"><h2 data-i="h_talks"></h2><span class="count" id="talks-count"></span></div>
+      <div class="filters" id="talks-filters" role="group" aria-label="Format"></div>
+      <ul class="list" id="talks-list"></ul>
+      <button class="more" id="talks-more" type="button"></button>
+    </section>
+
+    <section id="teaching">
+      <div class="sh"><h2 data-i="h_teaching"></h2><span class="count" id="teaching-count"></span></div>
+      <div class="filters" id="teaching-filters" role="group" aria-label="Type"></div>
+      <ul class="list" id="teaching-list"></ul>
+    </section>
+
+    <section id="writing">
+      <div class="sh"><h2 data-i="h_writing"></h2><span class="count" id="writing-count"></span></div>
+      <ul class="list" id="writing-list"></ul>
+    </section>
+
+    <section id="juries">
+      <div class="sh"><h2 data-i="h_juries"></h2><span class="count" id="juries-count"></span></div>
+      <div class="filters" id="juries-filters" role="group" aria-label="Type"></div>
+      <ul class="list" id="juries-list"></ul>
+      <p class="orgs" id="orgs"></p>
+    </section>
+
+    <section id="about">
+      <div class="sh"><h2 data-i="h_about"></h2></div>
+      <div class="bio">
+        <div><div class="lab">English</div><div id="bio-en"></div></div>
+        <div lang="ko"><div class="lab">한국어</div><div id="bio-ko"></div></div>
+      </div>
+      <div class="sub"><h3 data-i="h_awards"></h3><ul class="list" id="awards-list"></ul></div>
+      <div class="sub"><h3 data-i="h_exp"></h3><ul class="list" id="exp-list"></ul></div>
+      <div class="sub"><h3 data-i="h_edu"></h3><ul class="list" id="edu-list"></ul></div>
+    </section>
+
+    <section id="contact">
+      <div class="sh"><h2 data-i="h_contact"></h2></div>
+      <div class="offer" id="offer"></div>
+      <div class="big" id="email">rene.lee@giioii.com</div>
+      <button class="copy" type="button" id="copy-btn" data-i="copy"></button>
+      <div class="links">
+        <a href="https://giioii.com" target="_blank" rel="noopener">Giioii Studio ↗</a>
+        <a href="https://www.instagram.com/cultureplanner/" target="_blank" rel="noopener">Instagram @cultureplanner ↗</a>
+      </div>
+      <footer><span>© 2026 Rene Hyewon Lee</span><span data-i="updated"></span></footer>
+    </section>
+  </main>
+</div>
+
+<script src="data.js"></script>
+<script>
+/* ================================================================
+   DATA — one row per activity. Edit here (later: from a Google Sheet).
+   type: work | talk | writing | teaching | jury | award
+   ================================================================ */
+/* ---------- UI strings ---------- */
+const S = {
+ en:{hero:"Turning technology into a <em>creative language</em>.",
+  intro:"Rene Hyewon Lee is a producer and director of immersive storytelling, working on the boundary between art and technology and between Korea and the world. Founder of Giioii.",
+  h_now:"Recent",h_works:"Works",h_talks:"Talks",h_writing:"Publications",h_teaching:"Workshops & Mentoring",h_juries:"Juries, Advisory & Research",h_about:"About",h_contact:"Contact",
+  h_awards:"Awards & Recognition",h_exp:"Experience",h_edu:"Education",
+  contact_short:"For commissions",copy:"Copy email",copied:"Copied",
+  all:"All",produce:"Producing",direct:"Directing",curate:"Curating & Programs",ai:"AI",screenx:"ScreenX 2012–19",speaker:"Speaker",moderator:"Moderator",lecture:"Lectures",
+  workshop:"Workshops & Labs",mentor:"Mentoring",uni:"University",advisory:"Advisory",jury:"Juries",research:"Research",
+  showall:"Show all talks",showsel:"Show selected",sel:"selected",of:"of",
+  updated:"Last updated October 2026",
+  offer:[["Keynotes & talks","AI and creation, immersive storytelling, art × technology"],["AI creative programs","Workshops, hackathons and labs where artists make new tools their own"],["Advisory","Immersive and LBE production design, festival strategy, global distribution"],["Mentoring & juries","Funding programs, festivals, international pitching"]],
+  facts:[["Art × Tech","boundary dweller"],["SIGGRAPH 2025","Best in Show"],["30+","international festival selections"]]},
+ ko:{hero:"기술을 <em>창작의 언어</em>로 바꾸는 경계인",
+  intro:"이혜원은 예술과 기술, 한국과 해외 현장의 경계에서 일하는 몰입형 스토리텔링 프로듀서이자 연출가다. 기어이 대표.",
+  h_now:"최근",h_works:"작업",h_talks:"발표",h_writing:"기고",h_teaching:"워크숍·멘토링",h_juries:"심사·자문·연구",h_about:"소개",h_contact:"의뢰",
+  h_awards:"수상·선정",h_exp:"경력",h_edu:"학력",
+  contact_short:"의뢰 문의",copy:"이메일 복사",copied:"복사됨",
+  all:"전체",produce:"프로듀싱",direct:"연출",curate:"기획·프로그램",ai:"AI",screenx:"ScreenX 2012–19",speaker:"발표",moderator:"모더레이션",lecture:"강연·특강",
+  workshop:"워크숍·랩",mentor:"멘토링",uni:"대학 강의",advisory:"자문",jury:"심사",research:"연구",
+  showall:"발표 전체 보기",showsel:"주요 발표만",sel:"주요",of:"/",
+  updated:"최종 업데이트 2026년 10월",
+  offer:[["강연·발표","AI와 창작, 몰입형 스토리텔링, 예술×기술"],["AI 창작 프로그램","창작자가 새 도구를 자기 언어로 바꾸는 워크숍·해커톤·랩 설계"],["자문","몰입형·LBE 제작 설계, 페스티벌 전략, 해외 유통"],["멘토링·심사","지원사업, 페스티벌, 국제 피칭"]],
+  facts:[["예술 × 기술","경계인"],["SIGGRAPH 2025","Best in Show"],["30+","국제 페스티벌 초청"]]}
+};
+const NAV = [["index","Index","인덱스"],["works","Works","작업"],["talks","Talks","발표"],["teaching","Workshops & Mentoring","워크숍·멘토링"],["writing","Publications","기고"],["juries","Juries & Research","심사·자문·연구"],["about","About / CV","소개"],["contact","Contact","의뢰"]];
+
+/* ---------- render ---------- */
+let L = "en", workF = "all", talkF = "all", talkAll = false, teachF = "all", juryF = "all";
+try{ const s = localStorage.getItem("rhl-lang"); if(s==="ko"||s==="en") L = s; }catch(e){}
+const $ = id => document.getElementById(id);
+const esc = s => String(s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tx = (o,k) => o[k+"_"+L] || o[k+"_en"] || "";
+const yr = o => o.y || (o.d||"").slice(0,4);
+const ttl = o => (o.type==="work") ? (L==="ko" ? "〈"+esc(tx(o,"t"))+"〉" : "<i>"+esc(tx(o,"t"))+"</i>") : esc(tx(o,"t"));
+
+function row(o, opts={}){
+  const m = tx(o,"m");
+  return `<li class="row"><span class="y">${esc(yr(o))}</span><span class="t">${ttl(o)}${m?`<span class="m">${esc(m)}</span>`:""}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c">${esc(o.c||"")}</span></li>`;
+}
+function filters(el, keys, cur, onPick){
+  el.innerHTML = keys.map(k => `<button type="button" id="f-${el.id}-${k}" aria-pressed="${k===cur}" data-k="${k}">${S[L][k]}</button>`).join("");
+  el.onclick = e => { const b = e.target.closest("button"); if(b) onPick(b.dataset.k); };
+}
+function render(){
+  const s = S[L];
+  document.documentElement.lang = L;
+  document.querySelectorAll("[data-i]").forEach(el => { el.innerHTML = s[el.dataset.i]; });
+  $("lang-en").setAttribute("aria-pressed", L==="en"); $("lang-ko").setAttribute("aria-pressed", L==="ko");
+  $("nav").innerHTML = NAV.map((n,i)=>`<li><a href="#${n[0]}" data-s="${n[0]}"><span class="n">${String(i).padStart(2,"0")}</span><span>${L==="en"?n[1]:n[2]}${L==="en"?`<span class="ko">${n[2]}</span>`:""}</span></a></li>`).join("");
+  $("facts").innerHTML = s.facts.map(f=>`<span><b>${f[0]}</b> ${f[1]}</span>`).join("");
+  /* Recent: the three latest talks, derived from the data — nothing to maintain by hand */
+  const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const fmt = d => { const [yy,mm]=String(d).split("-"); if(!mm) return yy; return L==="en" ? MON[+mm-1]+" "+yy : yy+". "+(+mm)+"."; };
+  const recent = D.filter(o=>o.type==="talk" && /^\d{4}-\d{2}/.test(o.d)).sort((a,b)=>b.d.localeCompare(a.d)).slice(0,3);
+  $("now-list").innerHTML = recent.map(n=>`<div><div class="d">${fmt(n.d)}</div><div class="w">${esc(tx(n,"t"))}</div><div class="p">${esc(tx(n,"r"))} · ${esc(tx(n,"m"))}</div></div>`).join("");
+
+  const works = D.filter(o=>o.type==="work");
+  filters($("works-filters"), ["all","ai","produce","direct","curate","screenx"], workF, k=>{workF=k;render();});
+  const wv = workF==="all" ? works.filter(o=>!o.cat.split(" ").includes("sx")) : works.filter(o=>o.cat.split(" ").includes(workF));
+  $("works-list").innerHTML = wv.map(o=>row(o)).join("");
+  $("works-count").textContent = wv.length;
+
+  const talks = D.filter(o=>o.type==="talk");
+  filters($("talks-filters"), ["all","speaker","moderator","lecture"], talkF, k=>{talkF=k;render();});
+  let tv = talkF==="all" ? talks : talks.filter(o=>o.f.split(" ").includes(talkF));
+  const showing = (talkAll || talkF!=="all") ? tv : tv.filter(o=>o.sel);
+  $("talks-list").innerHTML = showing.map(o=>row(o)).join("");
+  $("talks-count").textContent = showing.length+" "+s.of+" "+talks.length;
+  $("talks-more").hidden = talkF!=="all";
+  $("talks-more").textContent = talkAll ? s.showsel : s.showall+" ("+talks.length+")";
+
+  const wr=D.filter(o=>o.type==="writing"); $("writing-list").innerHTML=wr.map(o=>row(o)).join(""); $("writing-count").textContent=wr.length;
+  const te=D.filter(o=>o.type==="teaching");
+  filters($("teaching-filters"), ["all","workshop","mentor","uni"], teachF, k=>{teachF=k;render();});
+  const tev = teachF==="all" ? te : te.filter(o=>o.f===teachF);
+  $("teaching-list").innerHTML=tev.map(o=>row(o)).join(""); $("teaching-count").textContent=tev.length;
+  const j = D.filter(o=>o.type==="jury");
+  filters($("juries-filters"), ["all","advisory","jury","research"], juryF, k=>{juryF=k;render();});
+  const jv = juryF==="all" ? j : j.filter(o=>o.f===juryF);
+  $("juries-list").innerHTML=jv.map(o=>row(o)).join(""); $("juries-count").textContent=jv.length;
+  $("orgs").textContent = L==="en"?ORGS_EN:ORGS_KO;
+  $("awards-list").innerHTML = D.filter(o=>o.type==="award").map(o=>row(o)).join("");
+  $("bio-en").innerHTML = BIO_EN.map(p=>`<p>${p}</p>`).join("");
+  $("bio-ko").innerHTML = BIO_KO.map(p=>`<p>${p}</p>`).join("");
+  const simple = arr => arr.map(o=>`<li class="row"><span class="y">${esc(o.y)}</span><span class="t">${esc(tx(o,"t"))}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c"></span></li>`).join("");
+  $("exp-list").innerHTML = simple(EXP); $("edu-list").innerHTML = simple(EDU);
+  $("offer").innerHTML = s.offer.map(o=>`<div><b>${o[0]}</b><span>${o[1]}</span></div>`).join("");
+  spy();
+}
+$("talks-more").onclick = ()=>{ talkAll=!talkAll; render(); };
+document.querySelector(".lang").onclick = e => { const b=e.target.closest("button"); if(!b) return; L=b.dataset.l; try{localStorage.setItem("rhl-lang",L)}catch(err){} render(); };
+$("copy-btn").onclick = () => {
+  const done = () => { $("copy-btn").textContent = S[L].copied; setTimeout(()=>{$("copy-btn").textContent=S[L].copy},1600); };
+  const sel = () => { const r=document.createRange(); r.selectNodeContents($("email")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); };
+  try{ navigator.clipboard.writeText("rene.lee@giioii.com").then(done, sel); }catch(e){ sel(); }
+};
+function spy(){
+  const ids = NAV.map(n=>n[0]); let cur = ids[0];
+  ids.forEach(id=>{ const el=$(id); if(el && el.getBoundingClientRect().top < 140) cur=id; });
+  document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on", a.dataset.s===cur));
+}
+addEventListener("scroll", spy, {passive:true});
+render();
+</script>
+<noscript><p style="padding:24px">Rene Hyewon Lee (이혜원) — producer and director of immersive storytelling, founder of Giioii. Contact: rene.lee@giioii.com</p></noscript>
+</body>
+</html>
