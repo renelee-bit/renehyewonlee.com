@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230019ff'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='14' fill='white' text-anchor='middle'%3ERHL%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Rene Hyewon Lee","alternateName":["이혜원","Hyewon Lee"],"url":"https://renehyewonlee.com/","email":"rene.lee@giioii.com","jobTitle":"Producer and Director of Immersive Storytelling","worksFor":{"@type":"Organization","name":"Giioii Inc.","alternateName":"기어이","url":"https://giioii.com"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Korea National University of Arts"},{"@type":"CollegeOrUniversity","name":"Hankuk University of Foreign Studies"}],"award":"SIGGRAPH 2025 Immersive Pavilion Best in Show (Palace Immersive Goong)","sameAs":["https://www.instagram.com/cultureplanner/"],"knowsAbout":["Immersive storytelling","XR","Location-based entertainment","Art and technology","AI and creativity"]}
+{"@context":"https://schema.org","@type":"Person","name":"Rene Hyewon Lee","alternateName":["이혜원","Hyewon Lee"],"url":"https://renehyewonlee.com/","email":"rene.lee@giioii.com","jobTitle":"Producer and Director of Immersive Storytelling","worksFor":{"@type":"Organization","name":"Giioii Inc.","alternateName":"기어이","url":"https://giioii.com"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Korea National University of Arts"},{"@type":"CollegeOrUniversity","name":"Hankuk University of Foreign Studies"}],"award":"SIGGRAPH 2025 Immersive Pavilion Best in Show (Palace Immersive Goong)","sameAs":["https://kr.linkedin.com/in/hyewonl","https://www.instagram.com/cultureplanner/"],"knowsAbout":["Immersive storytelling","XR","Location-based entertainment","Art and technology","AI and creativity"]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -221,6 +221,7 @@ footer{margin-top:80px;padding-top:12px;border-top:1px solid var(--rule);font-si
       <button class="copy" type="button" id="copy-btn" data-i="copy"></button>
       <div class="links">
         <a href="https://giioii.com" target="_blank" rel="noopener">Giioii Studio ↗</a>
+        <a href="https://kr.linkedin.com/in/hyewonl" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a href="https://www.instagram.com/cultureplanner/" target="_blank" rel="noopener">Instagram @cultureplanner ↗</a>
       </div>
       <footer><span>© 2026 Rene Hyewon Lee</span><span data-i="updated"></span></footer>
@@ -323,7 +324,7 @@ function render(){
   $("juries-more").textContent = juryAll ? s.showsel : s.showall_j+" ("+jv.length+")";
   $("orgs").textContent = L==="en"?ORGS_EN:ORGS_KO;
   $("awards-list").innerHTML = D.filter(o=>o.type==="award").map(o=>row(o)).join("");
-  $("press-list").innerHTML = PRESS.slice().sort((a,b)=>b.d.localeCompare(a.d)).map(p=>`<li class="row"><span class="y">${p.d?esc(p.d.slice(0,4)):"▶"}</span><span class="t"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)} ↗</a><span class="m">${esc(L==="en"?p.q_en:"“"+p.q_ko+"”")}</span></span><span class="r">${esc(L==="en"?p.o_en:p.o_ko)}</span><span class="c">${L==="en"?"KO":""}</span></li>`).join("");
+  $("press-list").innerHTML = PRESS.slice().sort((a,b)=>b.d.localeCompare(a.d)).map(p=>`<li class="row"><span class="y">${p.d?esc(p.d.slice(0,4)):"▶"}</span><span class="t"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.t)} ↗</a><span class="m">${esc(L==="en"?p.q_en:"“"+p.q_ko+"”")}</span></span><span class="r">${esc(L==="en"?p.o_en:p.o_ko)}</span><span class="c">${p.lang==="en"?(L==="ko"?"EN":""):(L==="en"?"KO":"")}</span></li>`).join("");
   $("bio-en").innerHTML = BIO_EN.map(p=>`<p>${p}</p>`).join("");
   $("bio-ko").innerHTML = BIO_KO.map(p=>`<p>${p}</p>`).join("");
   const simple = arr => arr.map(o=>`<li class="row"><span class="y">${esc(o.y)}</span><span class="t">${esc(tx(o,"t"))}</span><span class="r">${esc(tx(o,"r"))}</span><span class="c"></span></li>`).join("");

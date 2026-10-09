@@ -182,6 +182,7 @@ const BIO_KO = [
 
 /* ---------- PRESS & INTERVIEWS (원문 제목 그대로, 최신순) ---------- */
 const PRESS = [
+ {d:"2025-06-05",lang:"en",t:"Rene Hyewon Lee, GiiÖii: “Entertainment isn’t about being superficial”",o_en:"XRMust, XR Magazine",o_ko:"XRMust (XR 매거진, 프랑스)",q_en:"On creating an environment people genuinely want to return to, emotionally and imaginatively",q_ko:"정서적으로, 상상으로 사람들이 다시 돌아오고 싶은 환경을 만드는 것",url:"https://xrmust.com/xr-magazine/rene-hyewon-lee-giioii/"},
  {d:"",t:"수많은 경계를 넘어 새로운 재미를 찾아다니는 경계인 | 이머시브 프로듀서 이혜원",o_en:"Art, Ketch-Up (YouTube)",o_ko:"쟝, 케챱 (유튜브)",q_en:"Video interview: the boundary dweller",q_ko:"영상 인터뷰",url:"https://www.youtube.com/watch?v=EfQcy6pEfag&t=21s"},
  {d:"2024-11",t:"Artist Talk: 기어이 스튜디오 — PARADISE ART LAB Festival 2024 아카이브북",o_en:"Paradise Cultural Foundation (PDF, pp. 39–42)",o_ko:"파라다이스문화재단 (PDF 39–42쪽)",q_en:"On why audiences forget the technology and remember only the story",q_ko:"관람객은 새로운 기술이 나오면 낡은 기술은 잊고 이야기만 기억합니다",url:"https://pcf.or.kr/images/pc/sub/artLap/2024_PAL_archivebook.pdf#page=39"},
  {d:"2025-10-10",t:"이야기 속으로 접속, 이혜원 기어이 대표 [인터뷰]",o_en:"DEN Magazine",o_ko:"덴 매거진",q_en:"On giving the audience a role and making them the protagonist",q_ko:"관객에게 역할을 부여해 이야기의 주인공으로",url:"https://www.theden.co.kr/news/articleView.html?idxno=4035"},
