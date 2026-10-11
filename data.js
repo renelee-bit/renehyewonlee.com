@@ -156,7 +156,7 @@ const EXP = [
  {y:"2008–10",t_en:"Tacit Group",t_ko:"테싯그룹",r_en:"Planning & Communications",r_ko:"기획·홍보"},
  {y:"2006–08",t_en:"Nstory",t_ko:"엔스토리",r_en:"Content planning",r_ko:"콘텐츠 기획"},
  {y:"2004–06",t_en:"Korea Creative Content Agency (KOCCA) · Korea Pavilion, Brand Licensing London 2005",t_ko:"한국콘텐츠진흥원 · 영국 Brand Licensing 2005 한국관",r_en:"Global Marketing Associate",r_ko:"글로벌 마케팅"},
- {y:"2002–04",t_en:"KISTI · Ahn Graphics",t_ko:"한국과학기술정보연구원 · 안그라픽스",r_en:"Research and publishing",r_ko:"연구·출판"}
+ {y:"2002–03",t_en:"Ahn Graphics",t_ko:"안그라픽스",r_en:"Web Producer, digital planning",r_ko:"웹 프로듀서·디지털 기획"}
 ];
 const EDU = [
  {y:"2026",t_en:"KAIST Graduate School of Culture Technology",t_ko:"KAIST 문화기술대학원",r_en:"Micro-degree, CT × AI",r_ko:"CT×AI 마이크로디그리"},
@@ -168,16 +168,14 @@ const ORGS_KO = "심사·평가·자문 기관: 예술경영지원센터, 한국
 const ORGS_EN = "Also served as juror, evaluator or advisor for: Korea Arts Management Service, Arts Council Korea, KOCCA, Korea Radio Promotion Association, KACES, Gyeonggi Cultural Foundation, Gyeonggi Content Agency, Jeonju Cultural Foundation, Seoul Namsan Gugakdang, Art Center Nabi, PARADISE ART LAB, Korea Software Copyright Committee, Korea Private Museum Association, ACTGROUND, Gangneung City, K-Arts, Sogang University and Kyonggi University.";
 
 const BIO_EN = [
- "Rene Hyewon Lee calls herself a boundary dweller. For twenty years she has worked in the space between art and technology, and between Korea and the international scene, taking each new technology and asking what kind of story it is suited to. Her studio's name, Giioii, comes from that question: a story that technology fits.",
- "She believes in the power of story, and she looks for creativity inside technology itself. Her works give the audience a role and make them the protagonist: in <i>Palace Immersive Goong</i>, six visitors walk into a 1902 court banquet that never took place; in <i>Nuville Bucheon</i>, a podcast co-written with AI sends players across the city on missions; in <i>Anima</i>, participants' drawings become motion through AI and motion capture. <i>Palace Immersive Goong</i> received Best in Show at the SIGGRAPH 2025 Immersive Pavilion.",
- "Works she has produced have been officially selected more than 30 times at international festivals including SXSW, Tribeca, IDFA DocLab and NewImages. Earlier, as a founding member of CJ CGV ScreenX, she led the 270° multi-projection format through its global launch, and at KOCCA she worked in global marketing.",
- "She continues to develop and produce new work at Giioii, testing AI and other emerging tools as creative material. Alongside her own productions, she designs workshops and hackathons where artists make new tools their own, and mentors creators heading to international markets. She teaches at Korea National University of Arts and is a visiting professor at Dankook University."
+ "Rene Hyewon Lee is a producer and director working across the boundary of art and technology. For more than twenty years she has created projects that connect film, performance, exhibition and immersive media, inviting audiences inside the story, and turning new technologies, from VR, AR and location-based experiences to AI, into a creative language.",
+ "A founding member of CJ CGV ScreenX, she led the global launch of the multi-projection format, and now leads Giioii Immersive Studio. <i>Palace Immersive Goong</i> received Best in Show at the SIGGRAPH 2025 Immersive Pavilion, and works she has produced have been officially selected more than 30 times at international festivals including SXSW, Tribeca, IDFA DocLab, Cannes XR and NewImages, through co-production and distribution with partners abroad. She teaches at Korea National University of Arts.",
+ "She works with artists, institutions and companies to develop, produce and direct immersive and AI-driven projects, and collaborates through talks, workshops, mentoring, advisory work and juries."
 ];
 const BIO_KO = [
- "이혜원은 스스로를 ‘경계인’이라 부른다. 지난 20년간 예술과 기술 사이, 한국과 해외 현장 사이에서 일하며, 새로운 기술이 나올 때마다 그 기술에 어울리는 이야기가 무엇인지 물어 왔다. 그가 이끄는 스튜디오 ‘기어이’의 이름도 ‘기술이 어울리는 이야기’에서 왔다.",
- "그는 이야기의 힘을 믿고, 기술 안에서 새로운 창의성을 발견한다. 그의 작업은 관객에게 역할을 주고 이야기의 주인공으로 만든다. 〈이머시브 궁〉에서는 여섯 명의 관객이 1902년 열리지 못한 궁중 연회 안을 걷고, 〈누빌부천〉에서는 AI와 함께 쓴 팟캐스트가 참가자에게 미션을 내리며 도시를 누비게 하고, 〈애니마〉에서는 참여자의 드로잉이 AI와 모션캡처를 거쳐 움직임이 된다. 〈이머시브 궁〉은 SIGGRAPH 2025 이머시브 파빌리온 Best in Show를 받았다.",
- "그가 프로듀싱한 작품들은 SXSW, 트라이베카, IDFA DocLab, 뉴이미지 등 국제 페스티벌에 30회 이상 공식 초청됐다. 앞서 CJ CGV ScreenX 창립 멤버로 270° 다면상영 포맷의 글로벌 런칭을 이끌었고, 한국콘텐츠진흥원에서 글로벌 마케팅을 맡았다.",
- "지금도 기어이에서 새로운 작품을 기획·제작하며, AI를 비롯한 새로운 기술을 창작의 재료로 실험하고 있다. 자신의 작업과 함께 창작자들이 새로운 도구를 자기 언어로 만들도록 돕는 워크숍과 해커톤을 설계하고, 해외 시장으로 향하는 창작자를 멘토링한다. 한국예술종합학교에 출강하며 단국대학교 초빙교수로 재직 중이다."
+ "이혜원은 예술과 기술의 경계를 오가며 작업하는 프로듀서이자 연출가다. 20년 넘게 영화와 공연, 전시와 몰입형 미디어를 잇는 프로젝트를 기획하며 관객을 이야기 안으로 초대하는 경험을 만들어 왔다. VR·AR과 장소 기반 경험에서 AI까지, 새로운 기술을 창작의 언어로 바꾸는 작업을 이어가고 있다.",
+ "CJ CGV ScreenX 창립 멤버로 다면상영 포맷의 글로벌 런칭을 이끌었고, 현재 기어이 이머시브 스튜디오를 이끌고 있다. 대표작 〈이머시브 궁〉은 SIGGRAPH 2025 이머시브 파빌리온 Best in Show를 수상했으며, 프로듀싱한 작품들은 해외 파트너와의 공동제작과 국제 유통을 통해 SXSW, 트라이베카, IDFA DocLab, 칸 XR, 뉴이미지 등 국제 페스티벌에 30회 이상 공식 선정됐다. 한국예술종합학교에 출강하고 있다.",
+ "예술가·기관·기업과 함께 몰입형·AI 기반 프로젝트를 기획·제작·연출하며, 강연과 워크숍, 멘토링, 자문과 심사로 협업한다."
 ];
 
 
